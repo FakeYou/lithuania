@@ -1,0 +1,19 @@
+{ 
+	"stations": [
+		{ "stn": 265020, "name": "PALANGA", 			"country": "LITHUANIA", "latitude": 55.967, "longitude": 21.1, 		"elevation": 15 },
+		{ "stn": 265021, "name": "SIAULIAI INTL", "country": "LITHUANIA", "latitude": 55.883, "longitude": 23.383, 	"elevation": 138 },
+		{ "stn": 265090, "name": "KLAIPEDA", 			"country": "LITHUANIA", "latitude": 55.733, "longitude": 21.067, 	"elevation": 7 },
+		{ "stn": 265180, "name": "LAUKUVA", 			"country": "LITHUANIA", "latitude": 55.617, "longitude": 22.233, 	"elevation": 166 },
+		{ "stn": 265240, "name": "SIAULIAI", 			"country": "LITHUANIA", "latitude": 55.933, "longitude": 23.317, 	"elevation": 107 },
+		{ "stn": 265290, "name": "PANEVEZYS", 		"country": "LITHUANIA", "latitude": 55.75, 	"longitude": 24.383, 	"elevation": 58 },
+		{ "stn": 265310, "name": "BIRZAI", 				"country": "LITHUANIA", "latitude": 56.2, 	"longitude": 24.767, 	"elevation": 62 },
+		{ "stn": 266000, "name": "SILUTE", 				"country": "LITHUANIA", "latitude": 55.35, 	"longitude": 21.467, 	"elevation": 5 },
+		{ "stn": 266210, "name": "RASEINIAI", 		"country": "LITHUANIA", "latitude": 55.383, "longitude": 23.117, 	"elevation": 111 },
+		{ "stn": 266290, "name": "KAUNAS", 				"country": "LITHUANIA", "latitude": 54.883, "longitude": 23.833, 	"elevation": 770 },
+		{ "stn": 266295, "name": "KAUNAS INTL", 	"country": "LITHUANIA", "latitude": 54.967, "longitude": 24.083, 	"elevation": 80 },
+		{ "stn": 266330, "name": "UTENA", 				"country": "LITHUANIA", "latitude": 55.533, "longitude": 25.6, 		"elevation": 106 },
+		{ "stn": 267130, "name": "KYBARTAI", 			"country": "LITHUANIA", "latitude": 54.633, "longitude": 22.783, 	"elevation": 59 },
+		{ "stn": 267300, "name": "VILNIUS", 			"country": "LITHUANIA", "latitude": 54.633, "longitude": 25.283, 	"elevation": 156 },
+		{ "stn": 267370, "name": "VARENA", 				"country": "LITHUANIA", "latitude": 54.25, 	"longitude": 24.55, 	"elevation": 111 }
+	]
+}
