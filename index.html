@@ -4,63 +4,40 @@
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<script src="http://d3js.org/topojson.v1.min.js"></script>
 
-		<script>
-			d3.json('ltu.json', function(error, ltu) {
-				if (error) return console.error(error);
-				console.log(ltu);
+		<script src="index.js"></script>
 
-				var width = 800;
-				var height = 500;
+    <style>
+      svg {
+        /*background-color: #B3DBD7;*/
+      }
 
-				var svg = d3.select('body').append('svg') 
-					.attr('width', width)
-					.attr('height', height);
+      #crossPattern path {
+        stroke: #CCC;
+        stroke-width: 0.5px;
+      }
 
-				var projection = d3.geo.mercator()
-					.scale(1)
-					.translate([0, 0]);
+      #dotPattern {
+        stroke: #EEE;
+        stroke-width: 0.5px;
+      }
 
-				var path = d3.geo.path()
-					.projection(projection);
+      .subunit {
+        fill: url(#crossPattern) #FFF;
+        stroke: rgba(100, 100, 100, 0.1);
+        stroke-width: 2px;
+        stroke-linejoin: round;
+      }
 
-				var bounds = path.bounds(ltu);
-				var scale = .95 / Math.max(
-					(bounds[1][0] - bounds[0][0]) / width,
-					(bounds[1][1] - bounds[0][1]) / height);
-				var translate = [
-					(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
-					(height - scale * (bounds[1][1] + bounds[0][1])) / 2
-				];
-
-				projection
-					.scale(scale)
-					.translate(translate);
-
-				svg.append('path')
-					.datum(ltu)
-					.attr('d', path)
-					.style({
-						fill: '#BBB',
-					});
-
-				d3.json('stations.json', function(error, stations) {
-					var points = [];
-					
-					svg.selectAll('path')
-						.data(stations.stations)
-						.enter().append('circle')
-						.attr('r', 4)
-						.attr('name', function(d) { return d.name })
-						.attr('cx', function(d) { return projection([d.longitude, d.latitude])[0] })
-						.attr('cy', function(d) { return projection([d.longitude, d.latitude])[1] })
-						.style({
-							'fill': '#BBB',
-							'stroke': '#fff',
-							'stroke-width': 1.5
-						})
-				})
-			});
-		</script>
+      .subunit.LTU { fill: #FFF; }
+/*      .subunit.BLR { fill: #EFD8A1; }
+      .subunit.POL { fill: #BCD693; }
+      .subunit.LVA { fill: #AFD7DB; }
+      .subunit.RUS { fill: #3D9CA8; }
+*/
+      .station {
+        fill: #888;
+      }
+    </style>
 	</head>
 	<body>
 		
