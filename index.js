@@ -4,7 +4,7 @@ d3.json('public/baltic.json', function(error, region) {
   })[0];
 
   var width = 1000;
-  var height = 752;
+  var height = 772;
 
   var svg = d3.select('body').append('svg') 
     .attr('width', width)
