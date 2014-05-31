@@ -7,8 +7,21 @@
 		<script src="index.js"></script>
 
     <style>
-      svg {
-        /*background-color: #B3DBD7;*/
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #background {
+        fill: #92B4CA;
+      }
+
+      #title {
+        fill: #333;
+        fill-opacity: .8;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 300;
       }
 
       #crossPattern path {
@@ -21,21 +34,41 @@
         stroke-width: 0.5px;
       }
 
-      .subunit {
-        fill: url(#crossPattern) #FFF;
-        stroke: rgba(100, 100, 100, 0.1);
-        stroke-width: 2px;
-        stroke-linejoin: round;
+      .country {
+        fill: #CED8B6;
       }
 
-      .subunit.LTU { fill: #FFF; }
-/*      .subunit.BLR { fill: #EFD8A1; }
-      .subunit.POL { fill: #BCD693; }
-      .subunit.LVA { fill: #AFD7DB; }
-      .subunit.RUS { fill: #3D9CA8; }
-*/
+      .country.LTU {
+        fill: #DAE5C1;
+      }
+
+      .country-label {
+        fill: #000;
+        fill-opacity: .5;
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        text-anchor: middle;
+      }
+
+      .country-border {
+        fill: none;
+        stroke: #9DA58B;
+        stroke-width: 2px;
+        stroke-linejoin: miter;
+      }
+
       .station {
-        fill: #888;
+        fill: #555;
+      }
+
+      .station-label {
+        fill: #555;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        text-anchor: middle;
+        text-transform: capitalize;
       }
     </style>
 	</head>
